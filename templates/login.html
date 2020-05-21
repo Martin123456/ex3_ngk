@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>NGK Exercise 3 - Login Page</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1>Enter login</h1>
+	<h4>If creating new account input username and password, then push Register. </h4>
+	<h4>If you already have a account, input username and password and push Log in.</h4>
+	<br>
+		<form action ="/login" method="POST">
+			<input type="username" name="username" placeholder="Username">
+			<input type="password" name="password" placeholder="Password">
+			<input type="submit" value="Log in">
+			<button type="submit" class="registerbtn">Register</button>
+		</form>
+		{% if error %}
+		<p class="error"><strong>Error:</strong> {{ error }}</p>
+		{% endif %}
+</body>
+</html>
+
+
+
+	
